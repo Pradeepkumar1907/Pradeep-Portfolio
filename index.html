@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pradeep</title>
+        <link rel="icon" type="image/x-icon" href="./Images/pixelcut-export.jpeg" sizes="any" id="favicon">
+
+<style>
+    /* Apply rounded corners to the favicon */
+    #favicon {
+        mask-image: radial-gradient(10px at 10px 10px, white 100%, transparent 0);
+        border-radius: 10px;
+    }
+</style>
+
+
+    </head>
+    <body style="background-color: rgb(135, 165, 206);">
+        <h1 style="font-family: 'Times New Roman', Times, serif;text-align: center;">My First Web Page</h1>
+        <img src ="D:\my.jpg" width = 100 alt = "My Photo" style="border: 5px solid white; border-radius: 10px;" id="img"><br>
+        <p>I <em>Love</em> <b>Volley Ball</b></p>
+    </body>
+    <h5>Mail Me</h5>
+    <a href="mailto:sanjikun883@gmail.com">
+        <img src ="Images/mail.png" width = 20 alt = "My Photo" style="border-radius: 10px;"></a>
+        <table width ="200px">
+            <caption>My Languages</caption>
+            <thead style="text-align:left;">
+                <tr>
+                    <th>S.No</th>
+                    <th colspan="2" style="text-align: center;">Languages</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>C</td>
+                    <td>Level 4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Python</td>
+                    <td>Level 3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Java</td>
+                    <td>Level 2</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>My Learnings</h3>
+        <ul style="display: block;">
+            <li>C
+                <ul>
+                    <li>Level 1</li>
+                    <li>Level 2</li>
+                </ul>
+            </li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Apptitude</li>
+        </ul>
+        <iframe src="a.html"></iframe>
+        <br>
+        <a href="#img">Images</a>
+        <fieldset>
+            <legend>Sign In</legend>
+            <label>Name</label>
+            <input type="text" placeholder="Username" id="name" required>
+            <br><br>
+            <label>Password</label>
+            <input type="password" placeholder="Strong Password" id="pass" required>
+            <br><br>
+            <label>DOB</label>
+            <input type="date" id="dob" required>
+            <br><br>
+            <input type="radio" name="Gender">
+            <label>Male</label>
+            <input type="radio" name="Gender">
+            <label>Female</label>
+            <input type="radio" name="Gender">
+            <label>Others</label>
+            <br><br>
+            <input type="checkbox" name="accept" id="accept">
+            <label>Terms And Conditions</label>
+            <br><br>
+            <input type="submit" placeholder="sign up" id="sub-btn">
+        </fieldset>
+        <script>
+            var subtn = document.getElementById("sub-btn");
+
+subtn.addEventListener("click", function() {
+    window.open("a.html", "_blank");
+    var dob = document.getElementById("dob");
+    var pass = document.getElementById("pass");
+    var name = document.getElementById("name");
+    dob.value = "";
+    pass.value = "";
+    name.value = "";
+});
+
+        </script>
+</html>
