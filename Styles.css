@@ -1,0 +1,79 @@
+body {
+    background: url(Images/Img\ 2.avif) fixed;
+    background-size: cover;
+    color: aliceblue;
+
+}
+fieldset {
+    border-style: groove;
+    border-width: thick;
+    border-color: hsl(184, 94%, 41%);
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    size: 100px;
+}
+h1 {
+    color: blue;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+h2 {
+    color: rgb(0, 234, 255);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+input[type ="radio"] {
+    cursor: pointer;
+}
+input[type ="checkbox"] {
+    cursor: pointer;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+.wide_table {
+    width: 40%;
+    border: 2px ridge white;
+    border-collapse: collapse;
+}
+.wide_table td:hover{
+    background-color: aqua;
+}
+.wide_table th:hover{
+    background-color: blanchedalmond;
+}
+.wide_table th, .wide_table td{
+    font-size : 20px;
+    padding: 8px;
+    height: 50px;
+    border: 2px solid white;
+    text-align: center;
+    vertical-align: bottom;
+}
+caption{
+    font-size: x-large;
+}
+p {
+    text-align: justify;
+    color: #06f94f;
+    text-shadow: 5px 5px 10px;
+    line-height: 30px;
+    word-spacing: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+nav img{
+    height: 50%;
+}
