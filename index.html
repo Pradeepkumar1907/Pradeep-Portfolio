@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pradeep</title>
-        <link rel="icon" type="image/x-icon" href="./Images/pixelcut-export.jpeg">
-        <link rel="stylesheet" href="Styles.css">
-    </head>
-        <fieldset>
+<head>
+    <title>Pradeep</title>
+    <link rel="icon" type="image/x-icon" href="./Images/pixelcut-export.jpeg">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <fieldset>
+        <form id="myForm" action="a.html" target="_blank" onsubmit="clearForm()">
             <input type="text" placeholder="Username" id="name" required>
             <br><br>
             <input type="password" placeholder="Strong Password" id="pass" required>
             <br><br>
             <input type="date" id="dob" required>
             <br><br>
-            <input type="radio" name="Gender">
+            <input type="radio" name="Gender" required>
             <label>Male</label>
-            <input type="radio" name="Gender">
+            <input type="radio" name="Gender" required>
             <label>Female</label>
-            <input type="radio" name="Gender">
+            <input type="radio" name="Gender" required>
             <label>Others</label>
             <br><br>
-            <input type="checkbox" name="accept" id="accept">
+            <input type="checkbox" name="accept" id="accept" required>
             <label id="check">Terms And Conditions</label>
             <br><br>
-            <input type="submit" placeholder="sign up" id="sub-btn">
-        </fieldset>
-        <script>
-            var subtn = document.getElementById("sub-btn");
+            <input type="submit" value="Sign Up" id="sub-btn">
+        </form>
+    </fieldset>
 
-subtn.addEventListener("click", function() {
-    window.open("a.html", "_blank");
-    var dob = document.getElementById("dob");
-    var pass = document.getElementById("pass");
-    var name = document.getElementById("name");
-    dob.value = "";
-    pass.value = "";
-    name.value = "";
-});
-
-        </script>
+    <script>
+        function clearForm() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</body>
 </html>
