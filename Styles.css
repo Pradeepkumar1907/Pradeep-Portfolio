@@ -1,7 +1,7 @@
 body {
-    background: url(Images/Img\ 2.avif) fixed;
+    background: url(Images/Img\ 3.avif) fixed;
     background-size: cover;
-    color: aliceblue;
+    color: rgb(1, 7, 14);
 
 }
 fieldset {
@@ -37,7 +37,7 @@ input[type="submit"]{
 }
 .wide_table {
     width: 40%;
-    border: 2px ridge white;
+    border: 2px ridge rgb(13, 0, 0);
     border-collapse: collapse;
 }
 .wide_table td:hover{
@@ -50,16 +50,17 @@ input[type="submit"]{
     font-size : 20px;
     padding: 8px;
     height: 50px;
-    border: 2px solid white;
+    border: 2px solid rgb(8, 0, 0);
     text-align: center;
     vertical-align: bottom;
 }
 caption{
     font-size: x-large;
+    margin-top: 40px;
 }
 p {
     text-align: justify;
-    color: #06f94f;
+    color: #4306f9;
     text-shadow: 5px 5px 10px;
     line-height: 30px;
     word-spacing: 15px;
@@ -76,4 +77,27 @@ nav{
 
 nav img{
     height: 50%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    background-color: black;
+    height: 60px;
+    align-items: center;
+    border-radius: 15px;
+}
+a{
+    font-size: 20px;
+    padding-right: 190px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+#logo{
+    color: #f08804;
+}
+button{
+    background-color: #f08804;
 }
